@@ -29,7 +29,7 @@ const styles = {
       alignItems: 'flex-start',
     },
     wrapper: {
-      borderRadius: 15,
+      borderRadius: 4,
       backgroundColor: Color.leftBubbleBackground,
       marginRight: 60,
       minHeight: 20,

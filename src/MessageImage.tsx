@@ -17,7 +17,8 @@ import { StylePropType } from './utils'
 
 const styles = StyleSheet.create({
   container: {
-    marginBottom: 9,
+    paddingHorizontal: 5,
+    marginVertical: 7,
   },
   image: {
     width: 150,
