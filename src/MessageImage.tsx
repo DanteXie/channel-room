@@ -16,7 +16,9 @@ import { IMessage } from './Models'
 import { StylePropType } from './utils'
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    marginBottom: 30,
+  },
   image: {
     width: 150,
     height: 100,
