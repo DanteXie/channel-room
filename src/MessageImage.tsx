@@ -20,9 +20,7 @@ const styles = StyleSheet.create({
   image: {
     width: 150,
     height: 100,
-    borderRadius: 13,
-    margin: 3,
-    resizeMode: 'cover',
+    resizeMode: 'contain',
   },
   imageActive: {
     flex: 1,
@@ -73,6 +71,8 @@ export default class MessageImage<
             activeProps={{
               style: styles.imageActive,
             }}
+            underlayColor='transparent'
+            springConfig={{ tension: 30, friction: 7, useNativeDriver: false }}
             {...lightboxProps}
           >
             <Image
