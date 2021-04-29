@@ -80,7 +80,6 @@ const styles = {
       marginRight: 10,
     },
     username: {
-      top: -3,
       left: 0,
       fontSize: 12,
       backgroundColor: 'transparent',
