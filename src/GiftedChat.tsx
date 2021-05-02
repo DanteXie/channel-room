@@ -51,6 +51,8 @@ import QuickReplies from './QuickReplies'
 dayjs.extend(localizedFormat)
 
 export interface GiftedChatProps<TMessage extends IMessage = IMessage> {
+  /* Channel ID */
+  channelId?: string
   /* Messages to display */
   messages?: TMessage[]
   /* Typing Indicator state */
@@ -223,6 +225,7 @@ class GiftedChat<TMessage extends IMessage = IMessage> extends React.Component<
   }
 
   static defaultProps = {
+    channelId: undefined,
     messages: [],
     messagesContainerStyle: undefined,
     text: undefined,

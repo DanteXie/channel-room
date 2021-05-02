@@ -21,6 +21,7 @@ import GiftedAvatar from './GiftedAvatar';
 import { IMessage, User, Reply, LeftRightStyle } from './Models';
 import QuickReplies from './QuickReplies';
 export interface GiftedChatProps<TMessage extends IMessage = IMessage> {
+    channelId?: string;
     messages?: TMessage[];
     isTyping?: boolean;
     messagesContainerStyle?: StyleProp<ViewStyle>;
@@ -115,6 +116,7 @@ declare class GiftedChat<TMessage extends IMessage = IMessage> extends React.Com
         getLocale: PropTypes.Requireable<(...args: any[]) => any>;
     };
     static defaultProps: {
+        channelId: undefined;
         messages: never[];
         messagesContainerStyle: undefined;
         text: undefined;
