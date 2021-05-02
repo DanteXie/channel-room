@@ -56,6 +56,7 @@ export interface IMessage {
   createdAt: Date | number
   user: User
   image?: string
+  localImage?: string
   system?: boolean
   sent?: boolean
   received?: boolean
